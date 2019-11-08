@@ -480,6 +480,14 @@ html {
   position: fixed;
 }
 
+.transition_1-2s {
+  transition-duration: 0.5s;
+}
+.transition_1s {
+  transition-duration: 1s;
+}
+
+ 
 .pcs {
   position: absolute;
   left: 50%;
@@ -572,13 +580,98 @@ html {
   min-width: 340px;
 }
 
+
+.media_screen_block {
+  display: none;
+}
+
+.media_screen_none {
+  display: block;
+}
+
+.pc_show {
+  display: block;
+}
+
+.phone_show {
+  display: none;
+}
+
+
+.table_text_center th,
+.table_text_center td {
+  text-align: center;
+}
+
+.el-dialog {
+  margin-bottom: 20px;
+}
+
+.margin_left_5p {
+  margin-left: 5%;
+}
+
+.line_height_25px {
+  line-height: 22px;
+}
+
+.line_height_35px {
+  line-height: 35px;
+}
+
+.width_80_pc {
+  width: 80%;
+}
+
+@media screen and (min-width: 800px) {
+  .pc_flex {
+    width: 94%;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+  .pc_flex>div {
+    width: 24%;
+  }
+}
+
+.height_0 {
+  height: 0px;
+}
+
+
 /* 小于800 的尺寸 */
 @media screen and (max-width:800px) {
   .el-message {
     width: 90%;
-
   }
-
+  .phone_block {
+    display: block;
+  }
+  .phone_width_100{
+    width: 100%;
+  }
+  .phone_margin_auto{
+    margin: auto;
+  }
+  .phone_width_90{
+    width: 90%;
+  }
+  .phone_margin_top_10{
+    margin-top: 10px;
+  }
+  .phone_margin_top_20{
+    margin-top: 20px;
+  }
+  .phone_margin_bottom_10{
+    margin-bottom: 10px;
+  }
+  .phone_margin_bottom_20{
+    margin-bottom: 20px;
+  }
   .meidia_margin_top_3 {
     margin-top: 3px;
   }
@@ -629,21 +722,6 @@ html {
 }
 
 
-.media_screen_block {
-  display: none;
-}
-
-.media_screen_none {
-  display: block;
-}
-
-.pc_show {
-  display: block;
-}
-
-.phone_show {
-  display: none;
-}
 
 @media screen and (max-width:800px) {
   .pc_show {
@@ -685,7 +763,9 @@ html {
   .media_width_80_800 {
     width: 100%;
   }
-
+  .width_80_pc {
+    width: 100%;
+  }
   .el-dialog {
     width: 90%;
   }
@@ -709,40 +789,10 @@ html {
   .media_height_300 {
     height: 300px;
   }
-}
-
-.table_text_center th,
-.table_text_center td {
-  text-align: center;
-}
-
-.el-dialog {
-  margin-bottom: 20px;
-}
-
-.margin_left_5p {
-  margin-left: 5%;
-}
-
-.line_height_25px {
-  line-height: 22px;
-}
-
-.width_80_pc {
-  width: 80%;
-}
-
-@media screen and (min-width: 800px) {
-  .pc_flex {
-    width: 94%;
-    margin: 20px auto 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+  .phone_width_30{
+    width: 30%;
   }
-
-  .pc_flex>div {
-    width: 24%;
+  .phone_width_80{
+    width: 80%;
   }
 }

@@ -93,6 +93,7 @@
 <style lang='less'>
     @import "../../assets/css/current_theme";
     .video_box {
+        box-shadow: 9px 9px 9px red;
         .title_text {
             font-size: 19px;
         }

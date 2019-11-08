@@ -1,12 +1,12 @@
 version: "3"
 services:
-  tracker-front:
+  dreamfii:
     image: 'caocaocao/web'
-    container_name: track_dev
+    container_name: dreamfii_web
     working_dir: /app/
     volumes:
       - "./dist:/app/dist"
-      - ./:/app/NowNet
+      - ./:/app/dreamfii
       - ./deploy_auto.sh:/app/deploy_auto.sh
     command:
       - /bin/sh
@@ -20,11 +20,10 @@ services:
       - WEB_BRANCH=dev
       - WEB_PRODORDEV=dev
       - HOST=0.0.0.0
-      - WEB_PROJECT_NAME=NowNet
+      - WEB_PROJECT_NAME=dreamfii
       - WEB_NEED_NPM_REGISTRY=true
-
     ports:
-      - "3002:3002"
+      - "7788:3002"
 
   # tracker-front-depend:
   #   image: 'caocaocao/tracker_depend'

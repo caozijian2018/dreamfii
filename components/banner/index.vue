@@ -1,8 +1,14 @@
 <template>
     <div>
-        <el-carousel :height="banner_height" :interval="5000" :type="pc_banner" arrow="always">
-            <el-carousel-item @click.native="jumpBanner(item.jump_url)" v-for="item in currentBanner.banner" :key="item.id">
-                <img :src="item.img_url" alt="" class="width_100">
+        <el-carousel class="xxx" :height="$store.state.is_pc ? banner_height : '300px'" :interval="5000" :arrow="$store.state.is_pc ? 'always':''">
+            <el-carousel-item>
+                <img src="../../static/img/b1.jpg" :height="$store.state.is_pc ? banner_height : '300px'"  style="" alt="" class="width_100">
+            </el-carousel-item>
+            <el-carousel-item>
+                <img src="../../static/img/b2.jpg" :height="$store.state.is_pc ? banner_height : '300px'"  alt="" class="width_100">
+            </el-carousel-item>
+            <el-carousel-item>
+                <img src="../../static/img/b3.jpg" :height="$store.state.is_pc ? banner_height : '300px'"  alt="" class="width_100">
             </el-carousel-item>
         </el-carousel>
     </div>
@@ -31,7 +37,6 @@
             }
         },
         mounted() {
-            this.pc_phone();
             this.setHeight();
             this.watchWidth();
         },
@@ -43,18 +48,15 @@
             },
             setHeight() {
                 this.$nextTick(() => {
-                    this.banner_height = (parseInt(this.$jquery(this.$jquery('.el-carousel__mask')[0]).css("width")) / 1.5 || getInnerWidth() / 1.5) + "px";
+                    this.banner_height = (parseInt(this.$jquery(this.$jquery('.el-carousel__mask')[0]).css("width")) / 3 || getInnerWidth() / 3) + "px";
                 })
             },
             watchWidth() {
                 window.addEventListener("resize", () => {
-                    this.pc_phone();
                     this.setHeight();
                 })
             },
-            pc_phone() {
-                this.pc_banner = isPc() ? "card" : "";
-            }
+            
         }
     }
 </script>
