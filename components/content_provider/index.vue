@@ -4,7 +4,7 @@
             <div class="flex_1 position_relative phone_width_100">
                 <img
                     :src="img1"
-                    class="width_100 scale1_10 transform_duration2"
+                    class="width_100  scale1_10 transform_duration2"
                     alt
                 />
                 <img

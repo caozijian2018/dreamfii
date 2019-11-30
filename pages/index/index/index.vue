@@ -82,6 +82,7 @@
         ></contentProvider2>
         <contact-us ref="contact_us" class="margin_top_70px"></contact-us>
         <app-footer class="margin_top_70px"></app-footer>
+        <img src="../../../static/img/back/office.gif" class="width_100" alt="">
         <!-- <contentProvidert class="margin_top_70px" :top-or-down="scroll_top > show_arr[4]" :class="{'transition_back': most_scroll_y + $store.state.innerHeight > show_arr[4]}" ref="content_provider_3"></contentProvidert>
         <contentProviderw class="margin_top_70px" :top-or-down="scroll_top > show_arr[5]" :class="{'transition_back': most_scroll_y + $store.state.innerHeight > show_arr[5]}" ref="content_provider_4"></contentProviderw>-->
     </div>

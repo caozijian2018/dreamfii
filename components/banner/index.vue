@@ -122,7 +122,8 @@ export default {
     // filter: drop-shadow(0px 14px 28px rgba(0,0,0,-0.7));
 }
 .hover1 {
-    background: linear-gradient(120deg, #43e97b 0%, #d4fc71 100%);
+    background: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+    // background: linear-gradient(120deg, #43e97b 0%, #d4fc71 100%);
     animation-name: changecolor;
     animation-duration: 2s;
     animation-timing-function: linear;
