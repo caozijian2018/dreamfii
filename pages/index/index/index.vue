@@ -1,8 +1,11 @@
 <template>
     <div class="height_100 overflow_scroll" @scroll="scroll">
-        <div class="position_fixed width_100 head_div vertical_middle">
+        <!-- <div class="position_fixed width_100 headerrr">
+            <img src="../../../static/img/logo2.png" style="width: 100px" class="padding_left_20" alt="">
+        </div> -->
+        <div class="position_fixed width_100 head_div vertical_middle" style="z-index:1000000">
             <img
-                src="../../../static/img/logo2.png"
+                :src="scroll_top < 700 ? logowhite : logored"
                 class="head_img vertical_middle padding_left_20"
                 alt
             />
@@ -112,6 +115,9 @@ export default {
     data() {
         return {
             show_loading: true,
+            logowhite: require("../../../static/img/logo2.png"),
+            logored: require("../../../static/img/logo.png"),
+
             scroll_top: 0,
             most_scroll_y: 0,
             show_arr: [],

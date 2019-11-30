@@ -614,6 +614,10 @@ html {
 .width_70{
   width: 70%;
 }
+.right_0{
+  right: 0;
+}
+
 .pcs {
   position: absolute;
   left: 50%;
@@ -622,7 +626,9 @@ html {
   transition: .4s;
   transform: translate(-50%, -50%);
 }
-
+.left80{
+  left: 80%;
+}
 .blur {
   background: inherit;
   -webkit-filter: blur(6px);
@@ -908,6 +914,7 @@ html {
   margin-top: 70px;
 }
 @media screen and (max-width:800px) {
+  
   .phone_overflow_x_hidden{
     overflow-x: hidden;
   }
@@ -1108,5 +1115,8 @@ html {
 
   .media_height_300 {
     height: 300px;
+  }
+  .phone_radius_20px{
+    border-radius: 20px;
   }
 }

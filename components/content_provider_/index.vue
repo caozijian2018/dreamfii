@@ -19,7 +19,7 @@
                 />
                 <img
                     :src="img2"
-                    class="content_absolute_img width_50 transform_duration1 position_absolute"
+                    class="content_absolute_img width_60 transform_duration1 position_absolute"
                     :class="{top_50px: _topOrDown}"
                     alt
                 />

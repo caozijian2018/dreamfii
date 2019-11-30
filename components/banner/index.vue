@@ -1,33 +1,30 @@
 <template>
-    <div class="banner position_relative">
+    <div class="banner position_relative" :style="{height: $store.state.is_pc ? '700px' : $store.state.innerHeight+'px'}">
         <div class="hoverdiv hover1" style="">
         </div>
-        <div class="width_65 pcs display_flex white flex_align_center">
+        <img src="../../static/img/back/banner-img.png" class="pcs width_30 left80 " alt="">
+        <div class="width_65 pcs display_flex white flex_align_center phone_block">
             <div class="flex_1">
-                <h1>Dreamfii -------</h1>
+                <h1>Dreamfii  -------</h1>
                 <div class="font_size_40 font_weight_800 margin_top_20">
                     CREATING
-                    <br />DIGITAL BUSINESS
+                    <br/>DIGITAL BUSINESS
                 </div>
                 <div class="head_button margin_top_3">Contact Us</div>
             </div>
             <div class="flex_1 display_flex flex_jusify_space">
-                <div class="width_50 left_phone position_relative overflow_hidden">
+                <div class="width_50  position_relative overflow_hidden phone_none">
                     <div class="position_absolute phone_hover_box width_100 height_97 overflow_hidden">
                         <img src="../../static/img/secret.png" class="width_92 display_block margin_auto" alt="">
                     </div>
                     <img src="../../static/img/banner-iphone.png" class="width_100 z_index100 position_relative" alt="">
                 </div>
-                <div class="width_50 left_phone position_relative overflow_hidden margin_left_20">
-                    <div class="position_absolute phone_hover_box scroll_animate_box width_100 height_97 overflow_hidden">
+                <div class="width_50 position_relative overflow_hidden margin_left_20">
+                    <div class="position_absolute phone_hover_box phone_border_radius scroll_animate_box width_100 height_97 overflow_hidden">
                         <img src="../../static/img/taichi.gif" class="width_92 display_block margin_auto" alt="">
                     </div>
                     <img src="../../static/img/banner-iphone.png" class="width_100 z_index100 position_relative" alt="">
                 </div>
-                <!-- <div class="width_50">
-                    <img src="../../static/img/banner-iphone.png" class="width_100" alt="">
-                </div> -->
-                <!-- <img src=".././../static/img/3.jpg" class="width_100" alt /> -->
             </div>
         </div>
     </div>
@@ -41,9 +38,9 @@ export default {
     methods:{
         scrollTop(){
             setInterval(() => {
-                var distance = Math.random()*2000 + 300;
-                this.$jquery(".scroll_animate_box").animate({ scrollTop: distance}, 3000);
-            }, 3000);
+                var distance = Math.random()*2000;
+                this.$jquery(".scroll_animate_box").animate({ scrollTop: distance}, 2000);
+            }, 2000);
         }
     }
 };
@@ -72,8 +69,7 @@ export default {
 }
 .phone_hover_box{
     border-radius: 50px;
-
-    filter: drop-shadow(0px 14px 28px rgba(0,0,0,-0.7));
+    // filter: drop-shadow(0px 14px 28px rgba(0,0,0,-0.7));
 }
 .hover1{
 
@@ -99,17 +95,19 @@ export default {
     //     -webkit-animation-iteration-count: infinite;
     //     -webkit-animation-direction: alternate;
     }
-    .left_phone {
-        // background-image: url("../../static/img/taichi.gif");
-        // background-size: 93% 94%;
-        // background-position: 10px 17px;
-        // background-repeat:no-repeat;
-        // box-shadow: 20px 20px 20px rgba(200, 200, 200, 0.6)
-    }
     height: 750px;
-    background: linear-gradient(120deg, #d4fc71 0%, #43e97b 100%);
+    background: linear-gradient(120deg, #f9d423 0%, #ff4e50 100%);
+    // background: linear-gradient(120deg, #d4fc71 0%, #43e97b 100%);
     // background-image: url("../../static/img/back/banner-img.gif");
     transition-duration: 1s;
-    
+    @media screen and (max-width: 800px){
+       .phone_border_radius {
+            border-radius: 20px;
+       }
+       .phone_position{
+           position: absolute;
+           bottom: -50%;
+       }
+    }
 }
 </style>

@@ -2,21 +2,20 @@
     <div class="display_flex flex_end width_100 workwithusbox">
         <div class="width_90 colorbox display_flex flex_align_center">
             <div class="flex_1">
-                <img src="../../static/img/3.jpg" class="width_100 vertical_middle" alt="">
+                <img src="../../static/img/back/cs.jpg" class="width_100 vertical_middle" alt="">
             </div>
             <div class="flex_2 white">
                 <div class="width_70 margin_auto">
                     <div class="font_size_36 font_weight_800 position_relative margin_bottom_4">
                         <div class="bord"></div>
-                        WANT TO WORK WITH US?
+                        Contact Us
                     </div>
                     <div class="line_height_25px">
-                        Let’s do business together. To get started, 
-                        all you need to do is click this button. Then our staff will get back to you soon.
+                        Address: ROOM 3 27/F HO KING COMMERCIAL CENTRE NO 2-16 FA YUEN STREET MONGKOK KL
                     </div>
-                    <div class="head_button margin_top_20">
-                        CONTACT US
-                    </div>
+                    <a href="email:customer@dreamfii.com" class="head_button margin_top_20">
+                        E-Mail: customer@dreamfii.com
+                    </a>
                 </div>
             </div>
         </div>
