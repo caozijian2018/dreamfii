@@ -1,83 +1,34 @@
 <template>
-    <div class="describeBox text_center font_size_15" v-if="show_footer">
-        <a :href="'http://humorboom.com/?op='+platform" class="white">{{$t('words.home')}}</a>
-        <a class="white" :href="'http://static.humorboom.com/'+platform+'/terms.html'">-{{$t('words.terms')}}</a>
-        <a href="#" class="white" @click="cancelSub" v-if="show_cancel"> - {{$t('words.cancel')}}</a>
+    <div class="width_90 margin_auto display_flex flex_jusify_space wrop">
+        <div class="width_15 margin_bottom_15" v-for="item in arr" :key="item">
+            <img :src="item" class="width_100" alt="">
+        </div>
     </div>
 </template>
 
 <script>
-    import getCountry from "../../util/get_country"
-    import go4url from "../../util/go4url"
-
-    export default {
-        data() {
-            return {
-                platform: "",
-                show_term: true,
-                show_cancel: true,
-                show_footer: true
-            }
-        },
-        mounted() {
-            this.setCountry();
-            this.showTermsCancel();
-        },
-        methods: {
-            setCountry() {
-                this.$nextTick(() => {
-                    this.platform = getCountry();
-                })
-            },
-            showTermsCancel() {
-                this.$nextTick(() => {
-                    switch (this.platform) {
-                        case "tw":
-                            (() => {
-                                this.show_term = false
-                            })();
-                            break;
-                        case "x":
-                            (() => {
-                                this.show_term = false
-                                this.show_footer = false
-                            })();
-                            break;
-                    }
-                });
-            },
-            cancelSub(terms) {
-                var phone = localStorage.phone;
-                var platform = this.platform;
-                var href_;
-                switch (platform) {
-                    case "tw":
-                        (() => {
-                            href_ = "http://static.humorboom.com/" + platform + "/cancel.html?phone=" + phone;
-                            location.href = href_;
-                        })();
-                        break;
-                    default:
-                        (() => {
-                            if (phone) {
-                                href_ = "http://static.humorboom.com/" + platform + "/cancel.html?phone=" + phone;
-                                location.href = href_;
-                            } else {
-                                location.href = go4url("unlogin");
-                            }
-                        })();
-                }
-
-            },
+export default {
+    data(){
+        return {
+            arr:[
+                require("../../static/img/partener/logo01.gif"),
+                require("../../static/img/partener/logo02.gif"),
+                require("../../static/img/partener/logo03.gif"),
+                require("../../static/img/partener/logo04.gif"),
+                require("../../static/img/partener/logo05.gif"),
+                require("../../static/img/partener/logo06.gif"),
+                require("../../static/img/partener/logo07.gif"),
+                require("../../static/img/partener/logo08.gif"),
+                require("../../static/img/partener/logo09.gif"),
+                require("../../static/img/partener/logo10.gif"),
+                require("../../static/img/partener/logo11.gif"),
+                require("../../static/img/partener/logo12.gif")
+            ]
         }
-    }
-</script>
 
-<style lang='less'>
-    @import "../../assets/css/current_theme.less";
-    .describeBox {
-        background: @light_gray;
-        padding: 10px;
-        color: #fff;
     }
+}
+
+</script>
+<style lang='less'>
 </style>

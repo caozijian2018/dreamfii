@@ -4,7 +4,8 @@ export default {
   locale: "en",
   platform_no_phone:false,
   search_word:"",
-  innerHeight: "0px",
+  innerHeight: 0,
+  innerWidth: 0,
+
   is_pc: true,
-  scroll_top: "0"
 }

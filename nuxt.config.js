@@ -17,19 +17,19 @@ module.exports = {
 
  dev: (process.env.NODE_ENV !== 'production'),
  env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3002',
+    baseUrl: process.env.BASE_URL || 'http://localhost:3030',
     API_URL: API_URL,
     WTAT_THIS_APP:"humorboom"
   },
   head: {
-    title: 'HumorBoom',
+    title: 'Nownetmobi HK Limited',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'video' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon2.ico' }
     ]
   },
   /*
@@ -40,7 +40,8 @@ module.exports = {
   ** Build configuration
   */
  css:[
-   "./assets/css/global_css.css"
+   "./assets/css/global_css.css",
+   "./assets/css/animate.css"
  ],
  proxy: {
   '/backend': {
@@ -67,6 +68,7 @@ plugins:[
   { src: '~plugins/axios.js', ssr: true },
   { src: '~plugins/i18n.js' },
   { src: '~plugins/vue-video-player.js',ssr:false},
+  { src: '~plugins/particlesjs.js',ssr:false},
   // { src: '~plugins/axios.js', ssr: true },
 ],
   build: {

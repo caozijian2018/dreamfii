@@ -8,11 +8,17 @@
 import Vue from "vue";
 // import "../util/glo_request";
 // import "../util/filter";
-import "../util/msg";
+// import "../util/msg";
 import "../util/es62es5";
+// import scrollFun from "../util/watch_scroll";
 import jquery from "jquery";
 Vue.prototype.$jquery = jquery;
 export default {
+    mounted(){
+        // window.onresize=function(){
+        //     history.go(0)
+        // }
+    },
 };
 </script>
 
@@ -21,11 +27,9 @@ export default {
 // @import "http://at.alicdn.com/t/font_843189_zrgmiohmyin.css";
 @import "../assets/css/current_theme";
 @import "../assets/css/current_app";
-
-body {
-    background: #fff;
+body{
+    overflow: hidden;
 }
-
 .container {
     width: 100%;
 }
