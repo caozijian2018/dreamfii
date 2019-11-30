@@ -1,4 +1,4 @@
 git pull
 npm install 
 npm run build
-pm2 restart nownet
+pm2 restart dreamfii
