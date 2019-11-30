@@ -1,8 +1,8 @@
 <template>
     <div class="content_provider2">
-        <div class="display_flex flex_align_center">
-            <div class="flex_1 padding_left_10p display_flex flex_end line_height_25px ">
-                <div class="width_30 margin_auto">
+        <div class="display_flex flex_align_center phone_block phone_width_90 phone_margin">
+            <div class="flex_1 padding_left_10p phone_padding_left_0 display_flex flex_end line_height_25px phone_block">
+                <div class="width_30 margin_auto phone_width_100">
                     <div class="red">
                         {{text2}}
                     </div>
@@ -11,7 +11,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex_1 position_relative">
+            <div class="flex_1 position_relative phone_margin_top_60px">
                 <img
                     :src="img1"
                     class="width_100 scale1_10 transform_duration2"
@@ -23,7 +23,7 @@
                     :class="{top_50px: _topOrDown}"
                     alt
                 />
-                <div :class="{top_30px: _topOrDown}" class="transform_duration1 display_flex position_absolute text_position flex_align_center">
+                <div :class="{top_30px: _topOrDown}" class="phone_none transform_duration1 display_flex position_absolute text_position flex_align_center">
                     <span class="font_weight_800 font_size_6">{{text1}}</span>
                     <div class="border margin_left_20"></div>
                 </div>
@@ -98,6 +98,12 @@ export default {
 		// -webkit-animation-timing-function:linear;
 		// -webkit-animation-iteration-count:infinite;
 		// -webkit-animation-direction:alternate;
+    }
+    @media screen and (max-width: 800px){
+        .content_absolute_img{
+            left: 25%;
+            top: -20%;
+        }
     }
 }
 </style>

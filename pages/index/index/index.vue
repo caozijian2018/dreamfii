@@ -1,9 +1,9 @@
 <template>
-    <div class="height_100 overflow_scroll" @scroll="scroll">
+    <div class="height_100 overflow_scroll scroll_box_div" @scroll="scroll">
         <!-- <div class="position_fixed width_100 headerrr">
             <img src="../../../static/img/logo2.png" style="width: 100px" class="padding_left_20" alt="">
         </div> -->
-        <div class="position_fixed width_100 head_div vertical_middle" style="z-index:1000000">
+        <div class="position_fixed width_100 head_div vertical_middle" v-if="show_loading" style="z-index:1000000">
             <img
                 :src="scroll_top < 700 ? logowhite : logored"
                 class="head_img vertical_middle padding_left_20"
@@ -15,6 +15,7 @@
         </div>
         <!-- banner -->
         <banner
+            @tobottom="jump()"
             :class="{
         transition_back: most_scroll_y + $store.state.innerHeight > show_arr[0]
       }"
@@ -24,7 +25,7 @@
         transition_back: most_scroll_y + $store.state.innerHeight > show_arr[1]
       }"
             ref="about"
-            class="margin_top_70px"
+            class="margin_top_70px phone_margin_top_160px"
         ></about>
         <contentProvider
             :img1="imgcontent1"
@@ -150,6 +151,12 @@ export default {
         };
     },
     methods: {
+        jump(){
+            this.$jquery(".scroll_box_div").animate(
+                    { scrollTop: 8000 },
+                    2000
+            );
+        },
         sortOffsetY() {
             this.$nextTick(() => {
                 this.show_arr = [
@@ -171,7 +178,6 @@ export default {
             if (scroll_top > this.most_scroll_y) {
                 this.most_scroll_y = scroll_top;
             }
-            console.log(this.most_scroll_y);
         },
         init() {
             this.setHeightAndPhoneOrPc();

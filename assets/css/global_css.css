@@ -784,7 +784,9 @@ html {
 .transform_duration15 {
   transition-duration: 1.5s;
 }
-
+.z_index10000{
+  z-index: 10000;
+}
 .transform_duration2 {
   transition-duration: 2s;
 }
@@ -1118,5 +1120,11 @@ html {
   }
   .phone_radius_20px{
     border-radius: 20px;
+  }
+  .phone_padding_left_0{
+    padding-left: 0;
+  }
+  .phone_padding_20px{
+    padding: 20px;
   }
 }

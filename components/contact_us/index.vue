@@ -1,11 +1,11 @@
 <template>
-    <div class="display_flex flex_end width_100 workwithusbox">
-        <div class="width_90 colorbox display_flex flex_align_center">
-            <div class="flex_1">
+    <div class="display_flex flex_end width_100 workwithusbox ">
+        <div class="width_90 colorbox phone_padding_20px phone_width_100 display_flex flex_align_center">
+            <div class="flex_1 phone_none">
                 <img src="../../static/img/back/cs.jpg" class="width_100 vertical_middle" alt="">
             </div>
             <div class="flex_2 white">
-                <div class="width_70 margin_auto">
+                <div class="width_70 margin_auto phone_width_100">
                     <div class="font_size_36 font_weight_800 position_relative margin_bottom_4">
                         <div class="bord"></div>
                         Contact Us

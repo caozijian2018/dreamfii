@@ -1,7 +1,7 @@
 <template>
     <div class="aboutdreamfii">
-        <div class="display_flex width_65 margin_auto flex_jusify_space flex_align_center">
-            <div class="width_45">
+        <div class="display_flex width_65 margin_auto flex_jusify_space flex_align_center phone_width_90 phone_margin_top_60px phone_block">
+            <div class="width_45 phone_width_100">
                 <!-- border -->
                 <div class="border scale1_10 transform_duration1"></div>
                 <div
@@ -15,7 +15,7 @@
                     convert successfully. Our ultimate mission to to make that happen.
                 </div>
             </div>
-            <div class="width_45">
+            <div class="width_45 phone_width_100 phone_margin_top_60px">
                 <img src="../../static/img/back/about.jpg" class="width_100" alt />
             </div>
         </div>
@@ -32,6 +32,9 @@ export default {};
         width: 100px;
         height: 2px;
         background: orangered;
+    }
+    @media screen and (max-width: 800px){
+        margin-top: 250px;
     }
 }
 </style>
