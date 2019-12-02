@@ -10,7 +10,7 @@
                 alt
             />
         </div>
-        <div class="hoverdiv" style="background: #ef4072" v-if="show_loading">
+        <div class="hoverdiv" style="background: #ef4072;z-index:10004" v-if="show_loading">
             <img src="../../../static/img/loading.gif" class="loading_img width_100 pcs" alt />
         </div>
         <!-- banner -->
@@ -185,7 +185,7 @@ export default {
             this.watchOnresize();
             setTimeout(() => {
                 this.show_loading = false;
-            }, 4000);
+            }, 3000);
         },
         watchOnresize() {
             window.onresize = this.setHeightAndPhoneOrPc;
