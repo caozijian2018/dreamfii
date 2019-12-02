@@ -5,7 +5,7 @@
                 <!-- border -->
                 <div class="border scale1_10 transform_duration1"></div>
                 <div
-                    class="font_size_40 margin_top_4 transilateX-1 transform_duration2"
+                    class="font_size_30 margin_top_4  transilateX-1 transform_duration2"
                 >ABOUT DREAMFII</div>
                 <div class="margin_top_3 gray_1 line_height_25px transilateX2 transform_duration2">
                     At Dreamfii, our mission goes beyond just producing digital mobile

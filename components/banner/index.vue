@@ -6,14 +6,14 @@
         }"
     >
         <div class="hoverdiv hover1" style></div>
-        <img src="../../static/img/back/banner-img.png" class="pcs width_30 left80" alt />
+        <img src="../../static/img/back/banner-img.png" class="pcs width_35 left69" alt />
         <div
             class="width_65 display_flex white flex_align_center phone_block position_relative z_index10000"
             style
         >
             <div class="flex_15">
-                <h1>Dreamfii</h1>
-                <div class="font_size_40 font_weight_800 margin_top_20">
+                <h1 class="font_size_30px font_weight_400">Dreamfii</h1>
+                <div class="font_size_50 font_weight_800 margin_top_20">
                     CREATING
                     <br />DIGITAL BUSINESS
                 </div>

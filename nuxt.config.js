@@ -22,7 +22,7 @@ module.exports = {
     WTAT_THIS_APP:"humorboom"
   },
   head: {
-    title: 'Dreamfii',
+    title: 'Dreamfii HK Limited',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

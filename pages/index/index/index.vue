@@ -29,7 +29,7 @@
         transition_back: most_scroll_y + $store.state.innerHeight > show_arr[1]
       }"
             ref="about"
-            class="margin_top_70px phone_margin_top_160px"
+            class="margin_top_200px phone_margin_top_160px"
         ></about>
         <contentProvider
             :img1="imgcontent1"
@@ -37,7 +37,7 @@
             :text1="c1text1"
             :text2="c1text2"
             :text3="c1text3"
-            class="margin_top_70px"
+            class="margin_top_200px"
             :top-down-distance="show_arr[2] - scroll_top"
             :class="{
         transition_back:
@@ -52,7 +52,7 @@
             :text2="c2text2"
             :text3="c2text3"
             :top-or-down="scroll_top > show_arr[3]"
-            class="margin_top_70px"
+            class="margin_top_200px"
             :top-down-distance="show_arr[3] - scroll_top"
             :class="{
                 transition_back:
@@ -65,13 +65,13 @@
                 transition_back: most_scroll_y + $store.state.innerHeight/1.5 > show_arr[4]
             }" 
             ref="work_with_us" 
-            class="margin_top_70px">
+            class="margin_top_200px">
         </work-with-us>
         <contentProvider
             :img1="imgcontent3_1"
             :img2="imgcontent3_2"
             :text1="c1text3_1"
-            class="margin_top_70px"
+            class="margin_top_200px"
             :text2="c1text3_2"
             :text3="c1text3_3"
             :top-down-distance="show_arr[5] - scroll_top"
@@ -87,23 +87,24 @@
             :text1="c2text5"
             :text2="c2text6"
             :text3="c2text7"
+            class="margin_top_200px"
             :top-down-distance="show_arr[6] - scroll_top"
             :class="{
-        transition_back:
-          most_scroll_y + $store.state.innerHeight / 1.5 > show_arr[6]
-      }"
+                transition_back:
+                most_scroll_y + $store.state.innerHeight / 1.5 > show_arr[6]
+            }"
             ref="content_provider_4"
         ></contentProvider2>
-        <contact-us ref="contact_us" class="margin_top_70px"
+        <contact-us ref="contact_us" class="margin_top_200px"
             :class="{
                 transition_back: most_scroll_y + $store.state.innerHeight > show_arr[7]
             }" 
         >
         </contact-us>
-        <app-footer class="margin_top_70px"></app-footer>
+        <app-footer class="margin_top_72px"></app-footer>
         <!-- <img src="../../../static/img/back/office.gif" class="width_100" alt=""> -->
-        <!-- <contentProvidert class="margin_top_70px" :top-or-down="scroll_top > show_arr[4]" :class="{'transition_back': most_scroll_y + $store.state.innerHeight > show_arr[4]}" ref="content_provider_3"></contentProvidert>
-        <contentProviderw class="margin_top_70px" :top-or-down="scroll_top > show_arr[5]" :class="{'transition_back': most_scroll_y + $store.state.innerHeight > show_arr[5]}" ref="content_provider_4"></contentProviderw>-->
+        <!-- <contentProvidert class="margin_top_200px" :top-or-down="scroll_top > show_arr[4]" :class="{'transition_back': most_scroll_y + $store.state.innerHeight > show_arr[4]}" ref="content_provider_3"></contentProvidert>
+        <contentProviderw class="margin_top_200px" :top-or-down="scroll_top > show_arr[5]" :class="{'transition_back': most_scroll_y + $store.state.innerHeight > show_arr[5]}" ref="content_provider_4"></contentProviderw>-->
     </div>
 </template>
 

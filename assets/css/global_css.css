@@ -20,16 +20,17 @@ body {
 .head_button{
   cursor: pointer;
   display: inline-block;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 17px;
   transition-duration: .3s;
-  border-radius: 15px;
+  border-radius: 20px;
   color: #fff;
-  background: rgba(200, 200, 200, 0.3);
+  background: rgba(250, 250, 250, 0.3);
 }
 .head_button:hover{
-  background: rgba(200, 200, 200, 0.6);
+  background: rgba(250, 250, 250, 0.5);
 }
 .indent20{
   text-indent: 20px;
@@ -484,6 +485,9 @@ html {
 .margin_left_1 {
   margin-left: 0.1rem;
 }
+.left60{
+  left: 60%;
+}
 
 .margin_left_2 {
   margin-left: 0.2rem;
@@ -533,6 +537,9 @@ html {
 
 .margin_left_28 {
   margin-left: 2.8rem;
+}
+.width_35{
+  width: 35%;
 }
 .width_55{
   width: 55%;
@@ -642,6 +649,9 @@ html {
   z-index: 1002;
   transition: .4s;
   transform: translate(-50%, -50%);
+}
+.left69{
+  left: 69%;
 }
 .left80{
   left: 80%;
@@ -917,6 +927,9 @@ html {
 .margin_top_72px{
   margin-top:72px;
 }
+.margin_top_200px{
+  margin-top:200px;
+}
 
 .transition_back .transilateX1,
 .transition_back .transilateX2,
@@ -1096,7 +1109,9 @@ html {
     height: 300px;
   }
 }
-
+.font_size_30px{
+  font-size: 30px;
+}
 /* 小于800 的尺寸 */
 @media screen and (max-width:800px) {
   .phone_font_size_30px{
