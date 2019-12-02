@@ -86,12 +86,13 @@ export default {
         },
         scrollTop() {
             setInterval(() => {
-                var distance = Math.random() * 2000;
+                var distance = Math.random() * 1000;
+                console.log(distance)
                 this.$jquery(".scroll_animate_box").animate(
                     { scrollTop: distance },
-                    2000
+                    4000
                 );
-            }, 2000);
+            }, 4000);
         }
     }
 };
