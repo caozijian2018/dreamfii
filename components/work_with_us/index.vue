@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="display_flex flex_end  width_100 workwithusbox scale1_10 transform_duration1_2 scale_origin_right">
-            <div class="width_97 colorbox phone_width_100 phone_padding_20px display_flex flex_align_center">
+            <div class="width_91 colorbox phone_width_100 phone_padding_20px display_flex flex_align_center">
                 <div class="flex_1 white">
                     <div class="width_70 margin_auto">
                         <div class="font_size_36 font_weight_800 position_relative margin_bottom_4">

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="display_flex flex_end width_100 contact_with_us scale1_10 transform_duration1_2 scale_origin_right">
-            <div class="width_97 colorbox phone_padding_20px phone_width_100 display_flex flex_align_center">
+            <div class="width_91 colorbox phone_padding_20px phone_width_100 display_flex flex_align_center">
                 <div class="flex_1 phone_none">
                     <img src="../../static/img/back/cs.jpg" class="width_100 vertical_middle" alt="">
                 </div>

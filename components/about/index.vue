@@ -7,7 +7,7 @@
                 <div
                     class="font_size_30 margin_top_4  transilateX-1 transform_duration2"
                 >ABOUT DREAMFII</div>
-                <div class="margin_top_3 gray_1 line_height_25px transilateX2 transform_duration2">
+                <div class="margin_top_3 gray_1 line_height_25px transilateX2 transform_duration2 font_size_15">
                     At Dreamfii, our mission goes beyond just producing digital mobile
                     content and bringing beautiful experience to users. Our job also
                     includes providing advertising solutions to your products as efficient

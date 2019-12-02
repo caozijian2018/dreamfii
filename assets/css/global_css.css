@@ -927,10 +927,15 @@ html {
 .margin_top_72px{
   margin-top:72px;
 }
+.width_91{
+  width: 91%;
+}
 .margin_top_200px{
   margin-top:200px;
 }
-
+.font_size_16{
+  font-size: 16px;
+}
 .transition_back .transilateX1,
 .transition_back .transilateX2,
 .transition_back .transilateX3,
