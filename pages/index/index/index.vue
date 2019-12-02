@@ -3,14 +3,14 @@
         <!-- <div class="position_fixed width_100 headerrr">
             <img src="../../../static/img/logo2.png" style="width: 100px" class="padding_left_20" alt="">
         </div> -->
-        <div class="position_fixed width_100 head_div vertical_middle" v-if="show_loading" style="z-index:1000000">
+        <div class="position_fixed width_100 head_div vertical_middle"  style="z-index:1000000">
             <img
                 :src="scroll_top < 700 ? logowhite : logored"
                 class="head_img vertical_middle padding_left_20"
                 alt
             />
         </div>
-        <div class="hoverdiv" style="background: skyblue" v-if="show_loading">
+        <div class="hoverdiv" style="background: #ef4072" v-if="show_loading">
             <img src="../../../static/img/loading.gif" class="loading_img width_100 pcs" alt />
         </div>
         <!-- banner -->

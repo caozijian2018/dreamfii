@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="flex_1 phone_none">
-                <img src="../../static/img/3.jpg" class="width_100 vertical_middle" alt="">
+                <img src="../../static/img/back/office.gif" class="width_100 vertical_middle" alt="">
             </div>
 
         </div>
@@ -40,7 +40,8 @@ export default {
         border: 1px solid #fff;
     }
     .colorbox{
-        background-image: linear-gradient(30deg, #ff5858 0%, #f09819 100%);
+        // background:rgba(235, 133, 94, 1.0);
+        background: #f97f54;
     }
 }
 </style>
