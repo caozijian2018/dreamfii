@@ -183,7 +183,9 @@ export default {
         init() {
             this.setHeightAndPhoneOrPc();
             this.watchOnresize();
-            this.show_loading = false;
+            setTimeout(() => {
+                this.show_loading = false;
+            }, 4000);
         },
         watchOnresize() {
             window.onresize = this.setHeightAndPhoneOrPc;
