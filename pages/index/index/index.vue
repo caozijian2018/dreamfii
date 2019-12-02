@@ -13,7 +13,7 @@
         <div class="hoverdiv" style="background: #ef4072;z-index:10004" v-if="show_loading">
             <img
                 src="../../../static/img/loading.gif"
-                class="loading_img width_70 phone_width_100 pcs"
+                class="loading_img width_642 phone_width_100 pcs"
                 alt
             />
         </div>

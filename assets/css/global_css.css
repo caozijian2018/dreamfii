@@ -822,7 +822,9 @@ html {
 .transform_duration15 {
   transition-duration: 1.5s;
 }
-
+.width_642{
+  width: 64.2%;
+}
 .opacity0{
   opacity: 0;
 }
