@@ -2,7 +2,7 @@
     <div class="content_provider2">
         <div class="display_flex flex_align_center phone_block phone_width_90 phone_margin">
             <div class="flex_1 padding_left_10p phone_padding_left_0 display_flex flex_end line_height_25px phone_block">
-                <div class="width_30 margin_auto phone_width_100 font_size_14">
+                <div class="width_50 margin_top_40 margin_auto phone_width_100 font_size_14">
                     <div class="red">
                         {{text2}}
                     </div>
@@ -19,12 +19,13 @@
                 />
                 <img
                     :src="img2"
-                    class="content_absolute_img width_60 transform_duration1 position_absolute"
-                    :class="{top_50px: _topOrDown}"
+                    :class="{bos_shadow1: text2 !='Taichi-lifestyle Video Portal' }"
+                    class="content_absolute_img width_70 transform_duration1 position_absolute"
+                    :style="{transform: 'translateY('+ topDownDistance/15+'px)'}"
                     alt
                 />
-                <div :class="{top_30px: _topOrDown}" class="phone_none transform_duration1 display_flex position_absolute text_position flex_align_center">
-                    <span class="font_weight_800 font_size_6">{{text1}}</span>
+                <div :style="{transform: 'translateY('+ topDownDistance/13+'px)'}" class="phone_none transform_duration1 display_flex position_absolute text_position flex_align_center">
+                    <span class="font_weight_800 font_size_34 gray_2">{{text1}}</span>
                     <div class="border margin_left_20"></div>
                 </div>
             </div>
@@ -36,9 +37,6 @@
 <script>
 export default {
     props:{
-        topOrDown:{
-            type: Boolean
-        },
         img1:{
 
         },
@@ -57,6 +55,10 @@ export default {
             type: String,
             default: ""
         },
+        topDownDistance:{
+            type: Number,
+            default:0
+        }
     },
     computed:{
        _topOrDown(){
@@ -77,7 +79,7 @@ export default {
 }
 .content_provider2 {
     .text_position {
-        left: -25%;
+        left: -47%;
         top: 10%;
         .border {
             width: 50px;

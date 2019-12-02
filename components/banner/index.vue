@@ -2,8 +2,8 @@
     <div
         class="banner position_relative display_flex flex_align_center flex_center"
         :style="{
-      height: $store.state.is_pc ? '700px' : $store.state.innerHeight + 'px'
-    }"
+            height: $store.state.is_pc ? '700px' : $store.state.innerHeight + 'px'
+        }"
     >
         <div class="hoverdiv hover1" style></div>
         <img src="../../static/img/back/banner-img.png" class="pcs width_30 left80" alt />
@@ -11,8 +11,8 @@
             class="width_65 display_flex white flex_align_center phone_block position_relative z_index10000"
             style
         >
-            <div class="flex_1">
-                <h1>Dreamfii -------</h1>
+            <div class="flex_15">
+                <h1>Dreamfii</h1>
                 <div class="font_size_40 font_weight_800 margin_top_20">
                     CREATING
                     <br />DIGITAL BUSINESS

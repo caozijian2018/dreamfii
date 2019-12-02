@@ -2,16 +2,20 @@
     <div class="height_100 overflow_scroll scroll_box_div" @scroll="scroll">
         <!-- <div class="position_fixed width_100 headerrr">
             <img src="../../../static/img/logo2.png" style="width: 100px" class="padding_left_20" alt="">
-        </div> -->
-        <div class="position_fixed width_100 head_div vertical_middle"  style="z-index:1000000">
+        </div>-->
+        <div class="position_fixed width_100 head_div vertical_middle" style="z-index:1000000">
             <img
                 :src="scroll_top < 700 ? logowhite : logored"
-                class="head_img vertical_middle padding_left_20"
+                class="head_img vertical_middle padding_left_30"
                 alt
             />
         </div>
         <div class="hoverdiv" style="background: #ef4072;z-index:10004" v-if="show_loading">
-            <img src="../../../static/img/loading.gif" class="loading_img width_100 pcs" alt />
+            <img
+                src="../../../static/img/loading.gif"
+                class="loading_img width_70 phone_width_100 pcs"
+                alt
+            />
         </div>
         <!-- banner -->
         <banner
@@ -34,9 +38,10 @@
             :text2="c1text2"
             :text3="c1text3"
             class="margin_top_70px"
-            :top-or-down="scroll_top > show_arr[2]"
+            :top-down-distance="show_arr[2] - scroll_top"
             :class="{
-        transition_back: most_scroll_y + $store.state.innerHeight > show_arr[2]
+        transition_back:
+          most_scroll_y + $store.state.innerHeight / 1.5 > show_arr[2]
       }"
             ref="content_provider"
         ></contentProvider>
@@ -48,12 +53,20 @@
             :text3="c2text3"
             :top-or-down="scroll_top > show_arr[3]"
             class="margin_top_70px"
+            :top-down-distance="show_arr[3] - scroll_top"
             :class="{
-        transition_back: most_scroll_y + $store.state.innerHeight > show_arr[3]
-      }"
+                transition_back:
+                most_scroll_y + $store.state.innerHeight / 1.5 > show_arr[3]
+            }"
             ref="content_provider_2"
         ></contentProvider2>
-        <work-with-us ref="work_with_us" class="margin_top_70px"></work-with-us>
+        <work-with-us 
+            :class="{
+                transition_back: most_scroll_y + $store.state.innerHeight/1.5 > show_arr[4]
+            }" 
+            ref="work_with_us" 
+            class="margin_top_70px">
+        </work-with-us>
         <contentProvider
             :img1="imgcontent3_1"
             :img2="imgcontent3_2"
@@ -61,9 +74,10 @@
             class="margin_top_70px"
             :text2="c1text3_2"
             :text3="c1text3_3"
-            :top-or-down="scroll_top > show_arr[5]"
+            :top-down-distance="show_arr[5] - scroll_top"
             :class="{
-        transition_back: most_scroll_y + $store.state.innerHeight > show_arr[5]
+        transition_back:
+          most_scroll_y + $store.state.innerHeight / 1.5 > show_arr[5]
       }"
             ref="content_provider_3"
         ></contentProvider>
@@ -73,14 +87,19 @@
             :text1="c2text5"
             :text2="c2text6"
             :text3="c2text7"
-            :top-or-down="scroll_top > show_arr[6]"
-            class="margin_top_70px"
+            :top-down-distance="show_arr[6] - scroll_top"
             :class="{
-        transition_back: most_scroll_y + $store.state.innerHeight > show_arr[6]
+        transition_back:
+          most_scroll_y + $store.state.innerHeight / 1.5 > show_arr[6]
       }"
             ref="content_provider_4"
         ></contentProvider2>
-        <contact-us ref="contact_us" class="margin_top_70px"></contact-us>
+        <contact-us ref="contact_us" class="margin_top_70px"
+            :class="{
+                transition_back: most_scroll_y + $store.state.innerHeight > show_arr[7]
+            }" 
+        >
+        </contact-us>
         <app-footer class="margin_top_70px"></app-footer>
         <!-- <img src="../../../static/img/back/office.gif" class="width_100" alt=""> -->
         <!-- <contentProvidert class="margin_top_70px" :top-or-down="scroll_top > show_arr[4]" :class="{'transition_back': most_scroll_y + $store.state.innerHeight > show_arr[4]}" ref="content_provider_3"></contentProvidert>
@@ -97,8 +116,6 @@ import contentProvider2 from "../../../components/content_provider_";
 import workWithUs from "../../../components/work_with_us";
 import contactUs from "../../../components/contact_us";
 import appFooter from "../../../components/footer";
-
-
 
 export default {
     components: {
@@ -141,22 +158,19 @@ export default {
             imgcontent3_2: require("../../../static/img/back/3-2.gif"),
             c1text3_1: "ADVERTISING SOLUTIONS",
             c1text3_2: "Get overseas users from now!",
-            c1text3_3: "Based on user analysis and market investigation, Dreamfii provides advertising solutions for companies that want to promote products in global market. ",
+            c1text3_3:
+                "Based on user analysis and market investigation, Dreamfii provides advertising solutions for companies that want to promote products in global market. ",
             imgcontent4_1: require("../../../static/img/back/4.jpg"),
             imgcontent4_2: require("../../../static/img/back/4-2.gif"),
-            c2text5:"PROFESSIONAL TEAM",
-            c2text6:"Let us help promote your products!",
-            c2text7:"With experienced media buying team, we offer advertising services to more than 1000 companies word wide, including some Internet giants at home and abroad. We provide media marketing solutions and global traffic integration solutions to enterprises and help them display the brand value in the world.",
-
-
+            c2text5: "PROFESSIONAL TEAM",
+            c2text6: "Let us help promote your products!",
+            c2text7:
+                "With experienced media buying team, we offer advertising services to more than 1000 companies word wide, including some Internet giants at home and abroad. We provide media marketing solutions and global traffic integration solutions to enterprises and help them display the brand value in the world."
         };
     },
     methods: {
-        jump(){
-            this.$jquery(".scroll_box_div").animate(
-                    { scrollTop: 8000 },
-                    2000
-            );
+        jump() {
+            this.$jquery(".scroll_box_div").animate({ scrollTop: 8000 }, 2000);
         },
         sortOffsetY() {
             this.$nextTick(() => {
@@ -169,7 +183,6 @@ export default {
                     this.$refs.content_provider_3.$el.offsetTop,
                     this.$refs.content_provider_4.$el.offsetTop,
                     this.$refs.contact_us.$el.offsetTop
-
                 ];
             });
         },
@@ -200,10 +213,10 @@ export default {
 </script>
 <style lang="less">
 .head_div {
-    height: 70px;
-    line-height: 70px;
+    height: 100px;
+    line-height: 100px;
     .head_img {
-        height: 26px;
+        height: 23px;
     }
 }
 .loading_img {
