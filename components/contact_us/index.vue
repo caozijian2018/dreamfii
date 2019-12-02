@@ -5,15 +5,15 @@
                 <img src="../../static/img/back/cs.jpg" class="width_100 vertical_middle" alt="">
             </div>
             <div class="flex_2 white">
-                <div class="width_70 margin_auto phone_width_100">
+                <div class="width_70 margin_auto phone_width_100 ">
                     <div class="font_size_36 font_weight_800 position_relative margin_bottom_4">
                         <div class="bord"></div>
                         Contact Us
                     </div>
-                    <div class="line_height_25px">
+                    <div class="line_height_25px font_size_14">
                         Address: ROOM 3 27/F HO KING COMMERCIAL CENTRE NO 2-16 FA YUEN STREET MONGKOK KL
                     </div>
-                    <a href="email:customer@dreamfii.com" class="head_button margin_top_20">
+                    <a href="email:customer@dreamfii.com" class="font_size_14 head_button margin_top_20">
                         E-Mail: customer@dreamfii.com
                     </a>
                 </div>

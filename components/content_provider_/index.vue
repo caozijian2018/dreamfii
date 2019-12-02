@@ -2,7 +2,7 @@
     <div class="content_provider2">
         <div class="display_flex flex_align_center phone_block phone_width_90 phone_margin">
             <div class="flex_1 padding_left_10p phone_padding_left_0 display_flex flex_end line_height_25px phone_block">
-                <div class="width_30 margin_auto phone_width_100">
+                <div class="width_30 margin_auto phone_width_100 font_size_14">
                     <div class="red">
                         {{text2}}
                     </div>

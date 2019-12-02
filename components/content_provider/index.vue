@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="flex_1 phone_margin_top_60px padding_left_10p phone_padding_left_0 line_height_25px phone_width_100 phone_width_100">
-                <div class="width_30 margin_auto phone_width_100">
+                <div class="width_30 margin_auto phone_width_100 font_size_14">
                     <div class="red">
                         {{text2}}
                     </div>

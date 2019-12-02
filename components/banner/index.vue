@@ -146,7 +146,7 @@ export default {
         //     -webkit-animation-direction: alternate;
     }
     height: 750px;
-    background: linear-gradient(120deg, #f9d423 0%, #ff4e50 100%);
+    background: linear-gradient(120deg, #f98054 0%, #ef4072 100%);
     // background: linear-gradient(120deg, #d4fc71 0%, #43e97b 100%);
     // background-image: url("../../static/img/back/banner-img.gif");
     transition-duration: 1s;

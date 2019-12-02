@@ -1,8 +1,8 @@
 body {
-  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans'
+  font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans'
 }
 .red{
-  color: orangered;
+  color:#ef4072;
 }
 .width_97{
   width: 97%;
@@ -74,6 +74,9 @@ body {
 }
 .font_size_60{
   font-size: 60px;
+}
+.font_size_14{
+  font-size: 14px;
 }
 .font_size_80{
   font-size: 80px;
