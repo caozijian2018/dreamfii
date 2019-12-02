@@ -92,7 +92,7 @@ export default {
 
     @media screen and (max-width: 800px){
        .content_absolute_img {
-            top: 75%;
+            top: 70%;
             box-shadow:6px 6px 8px rgba(200, 200, 200, 0.3);
             left: 25%;
         } 
