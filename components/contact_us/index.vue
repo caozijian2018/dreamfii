@@ -38,7 +38,8 @@ export default {
         border: 1px solid #fff;
     }
     .colorbox{
-        background-image: linear-gradient(30deg, #ff5858 0%, #f09819 100%);
+        background: #f97f54;
+        // background-image: linear-gradient(30deg, #ff5858 0%, #f09819 100%);
     }
 }
 </style>
