@@ -11,7 +11,7 @@
                             Let’s do business together. To get started, 
                             all you need to do is click this button. Then our staff will get back to you soon.
                         </div>
-                        <div class="head_button margin_top_40">
+                        <div class="head_button margin_top_40" @click="jump()">
                             CONTACT US
                         </div>
                     </div>
@@ -19,7 +19,6 @@
                 <div class="flex_2 phone_none">
                     <img src="../../static/img/back/office.gif" class="width_100 vertical_middle" alt="">
                 </div>
-
             </div>
         </div>
     </div>
@@ -28,7 +27,11 @@
 
 <script>
 export default {
-
+    methods:{
+        jump(){
+            this.$emit('tobottom')
+        }
+    }
 }
 
 </script>

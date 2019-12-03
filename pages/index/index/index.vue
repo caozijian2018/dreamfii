@@ -63,7 +63,8 @@
         <work-with-us 
             :class="{
                 transition_back: most_scroll_y + $store.state.innerHeight/1.5 > show_arr[4]
-            }" 
+            }"
+            @tobottom="jump()"
             ref="work_with_us" 
             class="margin_top_200px">
         </work-with-us>
@@ -199,7 +200,7 @@ export default {
             this.watchOnresize();
             setTimeout(() => {
                 this.show_loading = false;
-            }, 3000);
+            }, 4000);
         },
         watchOnresize() {
             window.onresize = this.setHeightAndPhoneOrPc;
