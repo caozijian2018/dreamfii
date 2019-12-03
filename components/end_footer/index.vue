@@ -4,7 +4,7 @@
             <div class="margin_top_20">
                 <img src="../../static/img/logo2.png" class="width_30" alt="">
             </div>
-            <div class="font_size_14 margin_top_10 margin_bottom_15">Discover the World of Win-win</div>
+            <div class="font_size_14 margin_top_10 margin_bottom_15">Discover the World of Win-Win</div>
             <div class="border margin_auto">
             </div>
         </div>
