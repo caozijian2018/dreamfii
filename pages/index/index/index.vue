@@ -103,6 +103,7 @@
         >
         </contact-us>
         <app-footer class="margin_top_72px"></app-footer>
+        <end-footer class="margin_top_40"></end-footer>
         <!-- <img src="../../../static/img/back/office.gif" class="width_100" alt=""> -->
         <!-- <contentProvidert class="margin_top_200px" :top-or-down="scroll_top > show_arr[4]" :class="{'transition_back': most_scroll_y + $store.state.innerHeight > show_arr[4]}" ref="content_provider_3"></contentProvidert>
         <contentProviderw class="margin_top_200px" :top-or-down="scroll_top > show_arr[5]" :class="{'transition_back': most_scroll_y + $store.state.innerHeight > show_arr[5]}" ref="content_provider_4"></contentProviderw>-->
@@ -118,6 +119,8 @@ import contentProvider2 from "../../../components/content_provider_";
 import workWithUs from "../../../components/work_with_us";
 import contactUs from "../../../components/contact_us";
 import appFooter from "../../../components/footer";
+import endFooter from "../../../components/end_footer";
+
 
 export default {
     components: {
@@ -127,7 +130,8 @@ export default {
         contentProvider2,
         workWithUs,
         contactUs,
-        appFooter
+        appFooter,
+        endFooter
     },
     mounted() {
         this.init();
