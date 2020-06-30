@@ -11,7 +11,7 @@
                             Contact Us
                         </div>
                         <div class="line_height_25px font_size_14">
-                            Address: ROOM 3 27/F HO KING COMMERCIAL CENTRE NO 2-16 FA YUEN STREET MONGKOK KL
+                            Address: FLAT B5 1/F MANNING IND BUILDING 116-118 HOW MING STREET KWUN TONG KL
                         </div>
                         <div class="font_size_21 font_weight_800 white margin_top_20">
                             E-Mail: customer@dreamfii.com
