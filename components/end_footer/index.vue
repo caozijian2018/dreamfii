@@ -8,7 +8,7 @@
 
                 <br>
                 <br>
-                © 2016-2020 All rights reserved. Dreamfii HK Limited.
+                © 2016-2020 All rights reserved.
             </div>
             <div class="border margin_auto">
             </div>

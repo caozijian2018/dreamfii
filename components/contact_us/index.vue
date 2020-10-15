@@ -11,7 +11,10 @@
                             Contact Us
                         </div>
                         <div class="line_height_25px font_size_14">
-                            Address: FLAT B5 1/F MANNING IND BUILDING 116-118 HOW MING STREET KWUN TONG KL
+                             Company: 成都雪骋科技有限公司
+                        </div>
+                        <div class="line_height_25px font_size_14">
+                            Address: 成都市武侯区金花桥街道金川路75号附5号
                         </div>
                         <div class="font_size_21 font_weight_800 white margin_top_20">
                             E-Mail: customer@dreamfii.com
