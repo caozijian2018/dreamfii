@@ -136,6 +136,7 @@ export default {
     mounted() {
         this.init();
         this.sortOffsetY();
+        this.saveOp();
     },
     data() {
         return {
@@ -175,6 +176,12 @@ export default {
         };
     },
     methods: {
+        saveOp(){
+            var op = this.$route.query.op;
+            if(op){
+                localStorage.op = op;
+            }
+        },
         jump() {
             this.$jquery(".scroll_box_div").animate({ scrollTop: 8000 }, 2000);
         },
