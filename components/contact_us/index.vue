@@ -19,35 +19,11 @@
                             </div>
                             <div class="font_size_14 font_weight_800 white margin_top_4px">
                                 E-Mail: customer@dreamfii.com
-                            </div>
-                            <div class="font_size_14 font_weight_800 white margin_top_4px">
-                                Phone Number: +8617380401211
-                            </div>
-                            <div class="font_size_14 font_weight_800 white margin_top_4px">
-                                Legal form of company: Limited Company 
-                            </div>
-                            <div class="font_size_14 font_weight_800 white margin_top_4px">
-                                CEO: Zuopeng Guo
-                            </div>
-                            <div class="font_size_14 font_weight_800 white margin_top_4px">
-                                Registration Number: 2368793
-                            </div>
-                            <div class="font_size_14 font_weight_800 white margin_top_4px">
-                                VAT Number: 66078972
-                            </div>
-                            
-                            
-
-
-
-                            
+                            </div>  
                         </div>
                         <div v-if="op!='mby'">
                             <div class="line_height_25px font_size_14">
-                                Company: 成都雪骋科技有限公司
-                            </div>
-                            <div class="line_height_25px font_size_14">
-                                Address: 成都市武侯区金花桥街道金川路75号附5号
+                               Address: FLAT B5 1/F MANNING IND BUILDING 116-118 HOW MING STREET KWUN TONG KL
                             </div>
                             <div class="font_size_21 font_weight_800 white margin_top_20">
                                 E-Mail: customer@dreamfii.com
